@@ -1,0 +1,41 @@
+Title shown in web browsers
+
+
+Import fonts from Google
+
+
+Include CSS style file
+
+
+The page header code goes here
+
+
+The main content for the web page goes between the main tags
+
+A huge emoji spinning with a list to the right and wrapped
+
+A block quote with a gradient background
+
+Two flip cards
+
+A link to the coolest projects website
+
+Footer with colour styling but not text
+
+Footer code goes here
+
+A responsive section to contain the card
+
+The card
+
+To control the flip
+
+The front card face
+
+The back card face
+
+This part is for extra information the browser needs to load the page correctly
+
+Appears on the web browser tab and search results
+
+The content that appears in the browser

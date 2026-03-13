@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Title shown in web browsers-->
+    <title>My website title</title>
+
+    <!-- Import fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Codystar:wght@300&family=Creepster&family=Eater&family=Faster+One&family=Finger+Paint&family=Flavors&family=Freckle+Face&family=Fredericka+the+Great&family=Gorditas&family=Hanalei+Fill&family=Lobster&family=Luckiest+Guy&family=Miltonian&family=Monoton&family=Ranchers&family=Rubik+Moonrocks&family=Shrikhand&family=Spirax&family=Titan+One&Bebas+Neue&Cairo&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Include CSS style file -->
+
+     <link href="style.css" rel="stylesheet" type="text/css" /> 
+     <link href="animation.css" rel="stylesheet" type="text/css" /> 
+     <link href="festival.css" rel="stylesheet" type="text/css" /> 
+  </head>
+
+  <body>
+    <!-- The main content for the web page goes between the main tags -->
+    <main>
+      <section class="wrap"> <!-- A responisive section to contain the card -->
+          <div class="card"> <!-- The card -->
+              <div class="card-content"> <!-- To control the flip -->
+                  <div class="card-face secondary"> <!-- The front card face -->
+                    <p>Rainbow forest</p>
+                    <img src="rainbow-forest.JPG">
+                  </div>
+                
+                  <div class="card-face flipme tertiary"> <!-- The back card face -->
+                    <p>Colour festival</p>
+                    <img src="colour-festival.jpg">
+                  </div>
+              </div>
+          </div>
+          
+          <div class="card"> <!-- The card -->
+              <div class="card-content"> <!-- To control the flip -->
+                  <div class="card-face tertiary rounded dashed-border"> <!-- The front card face -->
+                    <p class="hugefont">🦁</p>
+                  </div>
+                  <div class="card-face flipme secondary rounded solid-border"> <!-- The back card face -->
+                    <p class="hugefont">🐱</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="card"> <!-- The card -->
+              <div class="card-content"> <!-- To control the flip -->
+                  <div class="card-face gradient1 ycenter"> <!-- The front card face -->
+                    <h2>flip card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  </div>
+                
+                  <div class="card-face flipme gradient2 ycenter"> <!-- The back card face -->
+                   <h2>flip card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>

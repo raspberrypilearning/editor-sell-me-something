@@ -1,0 +1,20 @@
+
+/* Set up colour palette and fonts using variables */
+
+:root {
+  --primary: #ffffff;
+  --secondary: #3d74bd;
+  --tertiary: #6ca3d8;
+  --page: #f1e5df;
+  --onprimary: #8685af;
+  --onsecondary: #ffffff;
+  --ontertiary: #034c5f;
+  --onpage: #000;
+  --detail: #eb9ab3;
+  --detail2: #a8c695;
+
+  --body-font: lighter 1.1rem "Fredoka one", cursive;
+  --header-font: lighter 3rem "Chewy", cursive;
+  --title-font: lighter 2rem "Chewy", cursive;
+  --quote-font: lighter 1.5rem "Chewy", cursive;
+}
