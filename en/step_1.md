@@ -9,8 +9,8 @@ This project turns the starter page into a bold advert with a headline, a channe
 <div class="c-project-output">
   <iframe
     src="https://editor.raspberrypi.org/en/embed/viewer/editor-sell-me-something-complete"
-    width="600"
-    height="600"
+    width="100%"
+    height="700"
     frameborder="0"
     marginwidth="0"
     marginheight="0"
