@@ -48,7 +48,8 @@ main {
   background: var(--primary); /* Colour the background */
   color: var(--onprimary); /* Colour the text */
   margin: 0 auto; /* Center if the browser is really wide */
-  min-width: 25rem; /* Don't let the content get too narrow */
+  width: 100%; /* Let the content fill the available space */
+  min-width: 0; /* Allow the layout to shrink inside embeds */
   max-width: 70rem; /*  Don't let the content get too wide */
   padding: 0;
   padding-top: 0.5rem; /* Padding at the top */
@@ -70,7 +71,7 @@ footer {
 /* Section styles */
 
 section {
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin: 1rem auto;
 }
 
@@ -167,14 +168,14 @@ a:visited {
 /* Styles for the div tags that are inside a .wrap class */
 
 .wrap > div {
-  width: 14rem;
+  width: min(14rem, 100%);
   padding: 0rem;
 }
 
 /* Styles for the img tags that are inside a .wrap class */
 
 .wrap > img {
-  width: 14rem;
+  width: min(14rem, 100%);
   display: block;
   padding: 0rem;
 }
@@ -183,7 +184,7 @@ a:visited {
 
 .wrap > p,
 .wrap > span {
-  width: 14rem;
+  width: min(14rem, 100%);
   display: block;
   padding: 0rem;
 }
@@ -202,11 +203,11 @@ a:visited {
 }
 
 .wrap .narrow {
-  width: 10rem;
+  width: min(10rem, 100%);
 }
 
 .wrap .wide {
-  width: 20rem;
+  width: min(20rem, 100%);
 }
 
 blockquote {
@@ -271,7 +272,7 @@ cite {
 }
 
 .wrap .card {
-  width: 15rem;
+  width: min(15rem, 100%);
   height: 10rem;
   border: 0.1rem solid transparent;
 }
