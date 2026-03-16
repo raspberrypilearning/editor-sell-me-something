@@ -8,7 +8,7 @@ This project turns the starter page into a bold advert with a headline, a channe
 
 <div class="c-project-output">
   <iframe
-    src="https://editor.raspberrypi.org/en/embed/viewer/Coolest-projects"
+    src="https://editor.raspberrypi.org/en/embed/viewer/coolest-projects"
     width="600"
     height="600"
     frameborder="0"
