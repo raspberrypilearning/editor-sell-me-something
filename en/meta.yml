@@ -1,0 +1,27 @@
+title: Sell me something
+hero_image: images/banner.png
+description: Make a webpage for a product or idea.
+meta_title: Learn web development | Build a landing page | Sell
+meta_description: Learn web development for beginners with the Raspberry Pi Foundation. Use HTML and CSS to build a landing page to sell a product or idea.
+version: 5
+listed: true
+copyedit: true
+last_tested: "2026-03-13"
+steps:
+  - title: Introduction
+  - title: Add the page title
+  - title: Add a selling list
+    completion:
+      - engaged
+  - title: Add a customer quote
+  - title: Choose the colours and fonts
+  - title: Add YouTube flip cards
+  - title: Style the final layout
+    completion:
+      - internal
+  - title: Add a call to action link
+  - title: Refine the animation
+    completion:
+      - external
+  - title: Challenge your landing page
+    challenge: true
