@@ -237,8 +237,8 @@ cite {
 .gradient1 {
   background-image: linear-gradient(
     to bottom right,
-    #1b1c3a,
-    #f21677
+    #111111,
+    #ff0033
   );
   color: #ffffff;
 }
@@ -246,20 +246,20 @@ cite {
 .gradient2 {
   background-image: linear-gradient(
     to bottom right,
-    #e8278e,
-    #f8562e
+    #ff3d00,
+    #ffcc00
   );
-  color: #ffffff;
+  color: #111111;
 }
 
 .gradientCP {
   background-image: linear-gradient(
     to bottom right,
-    #f08bb8,
-    #28285b,
-    #f08bb8,
-    #5b5ba5,
-    #3f4999,
+    #0a0a0a,
+    #1f1f1f,
+    #ff0033,
+    #0a0a0a,
+    #ff3d00,
     #ffffff
   );
   color: #ffffff;

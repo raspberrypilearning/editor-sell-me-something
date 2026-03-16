@@ -3,15 +3,15 @@
 
 :root {
   --primary: #ffffff;
-  --secondary: #c51a4a;
-  --tertiary: #6cc04a;
-  --page: #000000;
-  --onprimary: #000000;
+  --secondary: #ff0033;
+  --tertiary: #111111;
+  --page: #0a0a0a;
+  --onprimary: #111111;
   --onsecondary: #ffffff;
   --ontertiary: #ffffff;
-  --onpage: #000000;
-  --detail: #f8562e;
-  --detail2: #f8562e;
+  --onpage: #ffffff;
+  --detail: #ff3d00;
+  --detail2: #ffcc00;
 
   --body-font: 1rem 'Nunito', sans-serif;
   --header-font: lighter 3rem 'Russo One', sans-serif;

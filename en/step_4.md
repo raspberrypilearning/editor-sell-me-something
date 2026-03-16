@@ -1,56 +1,32 @@
-## Use animation
+<h2 class="c-project-heading--task">Add a customer quote</h2>
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now it’s time to add some features to make your product page get your visitors' attention with interaction or animation.
-</div>
-<div>
-![](images/image.png){:width="300px"}
-</div>
+--- task ---
+Add a quote section that gives visitors social proof that the channel is worth subscribing to.
+--- /task ---
+
+Place the new section after your list in `index.html`.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 52
+line_highlights: 54-60
+---
+      <!-- Add a quote to make the channel feel more convincing -->
+      <section class="wrap gradient2">
+        <div class="wide">
+          <blockquote>The videos are short, clear, and full of ideas I can try straight away on my own channel.</blockquote> <!-- Share feedback from a subscriber -->
+          <cite>Mia, Pixel Pulse subscriber</cite> <!-- Credit the quote -->
+        </div>
+      </section>
+--- /code ---
+
 </div>
 
 --- task ---
-
-Add one or more flip cards that visitors can interact with to engage with your webpage.
-
-**Flip card examples**: [See inside](https://editor.raspberrypi.org/en/projects/flip-card-examples){:target="_blank"}
-<div>
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/flip-card-examples" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
-</div>
-
-
-[[[web-flip-cards]]]
-
+**Test:** A quote should appear underneath the list section with the subscriber's name shown below it.
 --- /task ---
-
---- task ---
-
-Add animation to some of your content. You could add animation to:
-+ Your heading
-+ A list
-+ An emoji
-+ A link
-+ Something else on your page 
-
-**Animation examples**: [See inside](https://editor.raspberrypi.org/en/projects/animation-examples){:target="_blank"}
-<div>
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/animation-examples" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
-</div>
-
-
-**Remember:** Animations grab the visitors' attention, so add them to the content you want them to focus on. 
-
-[[[web-starter-animations]]]
-
-You could amend the starter animations to have a bigger impact. For example, you could change the animations' timings, repeats, or actions.
-
-[[[web-customise-animations]]]
-
---- /task ---
-
---- task ---
-
-**Test:** Look at your webpage. Do you think the webpage would get someone's attention?
-
---- /task ---
-
