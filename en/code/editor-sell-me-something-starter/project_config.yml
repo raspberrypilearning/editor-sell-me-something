@@ -1,4 +1,4 @@
 name: 'Sell me something starter'
-identifier: 'sell-me-something-starter'
+identifier: 'editor-sell-me-something-starter'
 type: 'html'
 build: true
