@@ -1,3 +1,4 @@
 name: 'Coolest projects'
 identifier: 'coolest-projects'
 type: 'html'
+build: true
