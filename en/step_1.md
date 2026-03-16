@@ -16,7 +16,6 @@ This project turns the starter page into a bold advert with a headline, a channe
     marginheight="0"
     allowfullscreen>
   </iframe>
-  <pre>A finished landing page for a YouTube channel with a bright heading, a spinning emoji, a quote, flip cards, and a bouncing channel link.</pre>
 </div>
 
 --- task ---
