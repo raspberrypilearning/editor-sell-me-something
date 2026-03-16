@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">Style the final layout</h2>
 
 --- task ---
-Update the page styles so the background and flip cards match the finished YouTube channel design.
+Update the page styles so the background and flip cards match the finished YouTube channel design and still fit neatly inside the project embed.
 --- /task ---
 
 Edit the highlighted parts of `style.css`.
@@ -13,84 +13,51 @@ Edit the highlighted parts of `style.css`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 114
-line_highlights: 116-119,169-171,176-179,184-188,197-201,212-224,237-283
+line_number_start: 46
+line_highlights: 47-56,73-75,170-172,177-180,185-189,205-210,238-277
 ---
-/* Style for ordered and unordered lists */
-
-ol,
-ul {
-  text-align: left; /* Keep the list aligned neatly inside the wrapper */
-  padding-left: 2rem;
+/* The main content of the page between the header and footer */
+main {
+  background: var(--primary); /* Colour the background */
+  color: var(--onprimary); /* Colour the text */
+  margin: 0 auto; /* Center if the browser is really wide */
+  width: 100%; /* Let the content fill the available space */
+  min-width: 0; /* Allow the layout to shrink inside embeds */
+  max-width: 70rem; /*  Don't let the content get too wide */
+  padding: 0;
+  padding-top: 0.5rem; /* Padding at the top */
+  margin-bottom: 1em; /* Gap before the footer */
 }
 
-/* Padding around paragraphs */
+/* Section styles */
 
-p {
-  padding: 0.25rem 0.5rem;
-}
-
-/* Style for links */
-
-a:link,
-a:visited {
-  font-weight: bold;
-  color: inherit; /* Use the colour of the parent element */
-}
-
-.xcenter {
-  text-align: center;
-}
-
-.ycenter {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-}
-
-/* Styles just for the .wrap class */
-
-.wrap {
-  /* Make content wrap over mutiple rows */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-/* For creating fancy boxes */
-
-.dashed-border {
-  border: 0.25rem dashed var(--detail2);
-}
-
-.solid-border {
-  border: 0.25rem solid var(--detail2);
+section {
+  padding: 1rem; /* Keep enough space without forcing overflow */
+  margin: 1rem auto;
 }
 
 /* Styles for the div tags that are inside a .wrap class */
 
 .wrap > div {
-  width: 14rem;
-  padding: 0rem; /* Remove extra padding so the cards line up cleanly */
+  width: min(14rem, 100%); /* Keep wrapped blocks inside narrow embeds */
+  padding: 0rem;
 }
 
 /* Styles for the img tags that are inside a .wrap class */
 
 .wrap > img {
-  width: 14rem;
+  width: min(14rem, 100%); /* Let wrapped images shrink on smaller screens */
   display: block;
-  padding: 0rem; /* Keep wrapped images flush with the layout */
+  padding: 0rem;
 }
 
 /* Styles for the p tags that are inside a .wrap class */
 
 .wrap > p,
 .wrap > span {
-  width: 14rem;
+  width: min(14rem, 100%); /* Let text blocks shrink instead of overflowing */
   display: block;
-  padding: 0rem; /* Keep text blocks aligned with the cards */
+  padding: 0rem;
 }
 
 /* Specific styles for this project */
@@ -101,29 +68,29 @@ a:visited {
 
 .hugefont {
   /* Used to make a large emoji */
-  font-size: 8rem; /* Make the main emoji extra large */
+  font-size: 8rem;
   text-align: center;
   padding: 1rem;
 }
 
 .wrap .narrow {
-  width: 10rem;
+  width: min(10rem, 100%); /* Keep narrow blocks responsive */
 }
 
 .wrap .wide {
-  width: 20rem;
+  width: min(20rem, 100%); /* Stop the quote block overflowing in embeds */
 }
 
 blockquote {
   font: var(--quote-font);
-  color: var(--ontertiary); /* Use light text on the quote background */
+  color: var(--ontertiary);
   text-align: center;
   padding: 0.2rem;
   max-width: 25rem;
 }
 
 cite {
-  color: var(--onprimary); /* Make the quote credit readable */
+  color: var(--onprimary);
   background-color: var(--primary);
   font-size: normal;
   padding: 0.2rem;
@@ -176,7 +143,7 @@ cite {
 }
 
 .wrap .card {
-  width: 15rem; /* Give each card a fixed size */
+  width: min(15rem, 100%); /* Keep cards responsive in narrow embeds */
   height: 10rem;
   border: 0.1rem solid transparent;
 }
@@ -210,5 +177,5 @@ cite {
 </div>
 
 --- task ---
-**Test:** The page background should look more like a video channel banner, and the flip cards should still work.
+**Test:** The page background should look more like a video channel banner, the layout should fit neatly inside the project embed, and the flip cards should still work.
 --- /task ---
