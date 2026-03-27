@@ -4,7 +4,7 @@
 Adjust the animation settings so the channel emoji and link keep moving gently while the cards flip smoothly.
 --- /task ---
 
-Edit the animation classes in `animation.css`.
+Open `animation.css` and only change the highlighted lines. Leave the other animation classes in place.
 
 <div class="c-project-code">
 
@@ -14,9 +14,9 @@ language: css
 filename: animation.css
 line_numbers: true
 line_number_start: 1
-line_highlights: 1-3,17-19,31,38-39,49,52,55,70-76,88-94
+line_highlights: 2-3,7,18,31,39,44,49,52,55,70,74,86,90
 ---
- .spinme {
+.spinme {
   animation: rotate-center linear 8s infinite; /* Keep the channel emoji spinning all the time */
   display: inline-block; /* Important to allow rotation */
 }
@@ -64,7 +64,7 @@ line_highlights: 1-3,17-19,31,38-39,49,52,55,70-76,88-94
     transform: scale(1, 1);
   }
   20% {
-    transform: scale(1.05, 1.05); /* Make the scale effect more subtle */
+    transform: scale(1.05, 1.05);
   }
   40% {
     transform: scale(1.1, 1.1); /* Peak size for the animation */
@@ -85,13 +85,11 @@ line_highlights: 1-3,17-19,31,38-39,49,52,55,70-76,88-94
 @keyframes rollleft {
   /* The roll animation code */
   from {
-    transform: translate(-60vw) rotate(0deg);
-    transform-origin: center; /* Rotate around the middle of the element */
+    transform: translate(-60vw) rotate(0deg); transform-origin: center; /* Rotate around the middle of the element */
   }
 
   to {
-    transform: translate(0vw) rotate(360deg);
-    transform-origin: center;
+    transform: translate(0vw) rotate(360deg); transform-origin: center;
   }
 }
 
@@ -103,13 +101,43 @@ line_highlights: 1-3,17-19,31,38-39,49,52,55,70-76,88-94
 @keyframes rollright {
   /* The roll animation code */
   from {
-    transform: translate(60vw) rotate(360deg);
-    transform-origin: center; /* Rotate around the middle of the element */
+    transform: translate(60vw) rotate(360deg); transform-origin: center; /* Rotate around the middle of the element */
   }
 
   to {
-    transform: translate(0vw) rotate(00deg);
-    transform-origin: center;
+    transform: translate(0vw) rotate(00deg); transform-origin: center;
+  }
+}
+
+.movemeleft {
+  animation: moveleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveleft {
+  /* The move animation code */
+  from {
+    transform: translate(-60vw);
+  }
+
+  to {
+    transform: translate(0vw);
+  }
+}
+
+.movemeright {
+  animation: moveright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveright {
+  /* The move animation code */
+  from {
+    transform: translate(60vw);
+  }
+
+  to {
+    transform: translate(0vw);
   }
 }
 
@@ -123,3 +151,7 @@ line_highlights: 1-3,17-19,31,38-39,49,52,55,70-76,88-94
 --- task ---
 **Test:** The emoji should spin continuously, the `Visit the channel` link should keep bouncing, and the flip cards should still work.
 --- /task ---
+
+<div class="c-project-output">
+![Screenshot of the finished landing page with the animated emoji, cards, and link](images/step_9_output.png)
+</div>

@@ -1,5 +1,5 @@
- .spinme {
-  animation: rotate-center linear 8s infinite; /* Time taken for animation and number of repetitions */
+.spinme {
+  animation: rotate-center linear 8s infinite; /* Keep the channel emoji spinning all the time */
   display: inline-block; /* Important to allow rotation */
 }
 
@@ -15,7 +15,7 @@
 }
 
 .bounceme {
-  animation: bounce ease 2s infinite; /* runs the 'bounce' animation with ease timing (slow start and end) over two seconds. Runs the animation forever. */
+  animation: bounce ease 2s infinite; /* Keep the channel link bouncing so it stands out */
   display: inline-block;
 }
 
@@ -28,7 +28,7 @@
     transform: scale(1.1, 0.9) translateY(0); /* Grow width and shrink height for pre bounce squash effect */
   }
   30% {
-    transform: scale(1, 1) translateY(-1rem); /* Return to actual size and move emoji up from current position */
+    transform: scale(1, 1) translateY(-1rem); /* Use a small bounce so the text stays readable */
   }
   50% {
     transform: scale(1, 1) translateY(0); /* Move emoji back to starting position */
@@ -36,7 +36,7 @@
 }
 
 .scaleme {
-  animation: scale ease 2s infinite; /* runs the 'scale' animation with ease timing (slow start and end) over a two second interval. Runs the animation forever. */
+  animation: scale ease 2s infinite; /* Keep scaling effects looping smoothly */
   display: inline-block;
 }
 
@@ -49,10 +49,10 @@
     transform: scale(1.05, 1.05);
   }
   40% {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); /* Peak size for the animation */
   }
   60% {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05); /* Shrink back down smoothly */
   }
   80% {
     transform: scale(1, 1);
@@ -67,13 +67,11 @@
 @keyframes rollleft {
   /* The roll animation code */
   from {
-    transform: translate(-60vw) rotate(0deg);
-    transform-origin: center;
+    transform: translate(-60vw) rotate(0deg); transform-origin: center; /* Rotate around the middle of the element */
   }
 
   to {
-    transform: translate(0vw) rotate(360deg);
-    transform-origin: center;
+    transform: translate(0vw) rotate(360deg); transform-origin: center;
   }
 }
 
@@ -85,13 +83,43 @@
 @keyframes rollright {
   /* The roll animation code */
   from {
-    transform: translate(60vw) rotate(360deg);
-    transform-origin: center;
+    transform: translate(60vw) rotate(360deg); transform-origin: center; /* Rotate around the middle of the element */
   }
 
   to {
-    transform: translate(0vw) rotate(00deg);
-    transform-origin: center;
+    transform: translate(0vw) rotate(00deg); transform-origin: center;
+  }
+}
+
+.movemeleft {
+  animation: moveleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveleft {
+  /* The move animation code */
+  from {
+    transform: translate(-60vw);
+  }
+
+  to {
+    transform: translate(0vw);
+  }
+}
+
+.movemeright {
+  animation: moveright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveright {
+  /* The move animation code */
+  from {
+    transform: translate(60vw);
+  }
+
+  to {
+    transform: translate(0vw);
   }
 }
 

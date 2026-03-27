@@ -4,7 +4,7 @@
 Update the page styles so the background and flip cards match the finished YouTube channel design and still fit neatly inside the project embed.
 --- /task ---
 
-Edit the highlighted parts of `style.css`.
+Open `style.css`. There is a lot of existing CSS in this file, so only change the highlighted lines in the selectors shown below.
 
 <div class="c-project-code">
 
@@ -13,9 +13,17 @@ Edit the highlighted parts of `style.css`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 46
-line_highlights: 47-56,73-75,170-172,177-180,185-189,205-210,238-277
+line_number_start: 44
+line_highlights: 57-58,80,179-180,186,188,195,197,208,214,218,223,225,230-233,249-250,252,257-259,261,270,300-310
 ---
+/* add a background image to body */
+
+body {
+  /*background-image: url('name.jpg');*/ /* Uncomment and change filename to add a background image */
+  /*background-repeat: repeat;*/ /* Make the image repeat */
+  /*background-size: cover;*/ /* Make the image cover the whole container */
+}
+
 /* The main content of the page between the header and footer */
 main {
   background: var(--primary); /* Colour the background */
@@ -29,11 +37,115 @@ main {
   margin-bottom: 1em; /* Gap before the footer */
 }
 
+/* Header and footer element styles */
+
+header,
+footer {
+  text-align: center;
+  width: 100%; /* Fill the full width of the window */
+  margin: 0; /* Remove the default margin */
+  min-height: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* Section styles */
 
 section {
   padding: 1rem; /* Keep enough space without forcing overflow */
   margin: 1rem auto;
+}
+
+/* Border styles */
+
+.border-bottom {
+  border-bottom: 20px solid var(--detail); /* Add a solid */
+}
+
+.border-top {
+  border-top: 10px solid var(--detail2); /* Add a solid line above the footer */
+}
+
+/* Add a transparent effect */
+
+.transparent {
+  opacity: 0.95;
+}
+
+/* Styles just for h1 elements */
+
+h1 {
+  font: var(--header-font); /* Font style stored in the header-font variable */
+  padding: 2rem;
+  margin: 0; /* Center if the browser is really wide */
+}
+
+/* Styles just for h2 elements */
+
+h2 {
+  font: var(--title-font); /* Font style stored in the title-font variable */
+}
+
+/* Highlight key words in bold and apply an alternative text colour */
+
+strong {
+  color: var(--detail2); /* Text colour stored in the caption variable */
+  font-weight: bold; /* Makes text weight stronger than the default*/
+}
+
+/* Style for ordered and unordered lists */
+
+ol,
+ul {
+  display: inline-block;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+/* Padding around paragraphs */
+
+p {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Style for links */
+
+a:link,
+a:visited {
+  font-weight: bold;
+  color: inherit; /* Use the colour of the parent element */
+}
+
+.xcenter {
+  text-align: center;
+}
+
+.ycenter {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+/* Styles just for the .wrap class */
+
+.wrap {
+  /* Make content wrap over mutiple rows */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 0rem 0rem; /* horizontal and vertical gap */
+}
+
+/* For creating fancy boxes */
+
+.dashed-border {
+  border: 0.25rem dashed var(--detail2);
+}
+
+.solid-border {
+  border: 0.25rem solid var(--detail2);
 }
 
 /* Styles for the div tags that are inside a .wrap class */
@@ -111,7 +223,7 @@ cite {
     to bottom right,
     #111111,
     #ff0033
-  ); /* Create a dark-to-red gradient for the header and cards */
+  );
   color: #ffffff;
 }
 
@@ -120,21 +232,8 @@ cite {
     to bottom right,
     #ff3d00,
     #ffcc00
-  ); /* Create a warm orange-to-yellow gradient for the quote and card backs */
+  );
   color: #111111;
-}
-
-.gradientCP {
-  background-image: linear-gradient(
-    to bottom right,
-    #0a0a0a,
-    #1f1f1f,
-    #ff0033,
-    #0a0a0a,
-    #ff3d00,
-    #ffffff
-  ); /* Add a bold background that suits a video channel */
-  color: #ffffff;
 }
 
 .shadow {
@@ -153,25 +252,40 @@ cite {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s; /* Animate the flip effect */
+  transition: transform 1s;
   transform-style: preserve-3d;
   perspective: 60rem;
 }
 
 .card:hover .card-content {
-  transform: rotateY(180deg); /* Flip the card on hover */
+  transform: rotateY(180deg);
 }
 
 .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide the back until the card flips */
+  backface-visibility: hidden;
 }
 
 .card p {
   padding: 0.5rem;
 }
+
+.gradientCP {
+  background-image: linear-gradient(
+    to bottom right,
+    #0a0a0a,
+    #1f1f1f,
+    #ff0033,
+    #0a0a0a,
+    #ff3d00,
+    #ffffff
+  );
+  color: #ffffff;
+}
+
+/* Printed photo style */
 --- /code ---
 
 </div>
@@ -179,3 +293,7 @@ cite {
 --- task ---
 **Test:** The page background should look more like a video channel banner, the layout should fit neatly inside the project embed, and the flip cards should still work.
 --- /task ---
+
+<div class="c-project-output">
+![Screenshot of the landing page with the full layout styling and background gradient applied](images/step_7_output.png)
+</div>

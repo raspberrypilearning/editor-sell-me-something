@@ -4,7 +4,7 @@
 Add a final link that gives visitors a clear way to visit the YouTube channel.
 --- /task ---
 
-Place the link section after the cards in `index.html`.
+Paste this section just before `</main>` in `index.html`.
 
 <div class="c-project-code">
 
@@ -13,13 +13,15 @@ Place the link section after the cards in `index.html`.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 93
-line_highlights: 95-97
+line_number_start: 81
+line_highlights: 83-85
 ---
-      <!-- Add a final link that visitors can click -->
-      <section class="xcenter">
-        <a class="bounceme" href="https://www.youtube.com" target="_blank">Visit the channel</a> <!-- Send visitors to the YouTube website -->
       </section>
+
+      <section class="xcenter">
+        <a class="bounceme" href="https://www.youtube.com" target="_blank">Visit the channel</a> <!-- Send visitors to YouTube -->
+      </section>
+    </main>
 --- /code ---
 
 </div>
@@ -27,3 +29,7 @@ line_highlights: 95-97
 --- task ---
 **Test:** A `Visit the channel` link should appear at the bottom of the page and open YouTube in a new tab.
 --- /task ---
+
+<div class="c-project-output">
+![Screenshot of the landing page with the final call-to-action link at the bottom](images/step_8_output.png)
+</div>

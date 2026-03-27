@@ -9,7 +9,7 @@ copyedit: true
 last_tested: "2026-03-13"
 steps:
   - title: Introduction
-  - title: Add the page title
+  - title: Update the header and footer
   - title: Add a selling list
     completion:
       - engaged
@@ -23,5 +23,5 @@ steps:
   - title: Refine the animation
     completion:
       - external
-  - title: Challenge your landing page
+  - title: Challenge: make your landing page
     challenge: true

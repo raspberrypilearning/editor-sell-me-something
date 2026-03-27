@@ -13,13 +13,11 @@ Add a wrapped section with a large emoji and an ordered list.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 33
-line_highlights: 36-50
+line_number_start: 32
+line_highlights: 34-35,37-46
 ---
     <!-- The main content for the web page goes between the main tags -->
     <main>
-
-      <!-- Add a large emoji and a list of reasons to watch -->
       <section class="wrap">
         <p class="spinme hugefont">🎬</p> <!-- Make the emoji stand out and spin -->
 
@@ -41,3 +39,7 @@ line_highlights: 36-50
 --- task ---
 **Test:** You should see a large emoji next to a four-point list explaining what viewers get from the channel.
 --- /task ---
+
+<div class="c-project-output">
+![Screenshot of the landing page with a film emoji and a list of reasons to subscribe](images/step_3_output.png)
+</div>
