@@ -23,5 +23,5 @@ steps:
   - title: Refine the animation
     completion:
       - external
-  - title: Challenge: make your landing page
+  - title: Challenge - make your landing page
     challenge: true
