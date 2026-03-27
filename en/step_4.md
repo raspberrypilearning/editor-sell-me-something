@@ -4,7 +4,7 @@
 Add a quote section that gives visitors social proof that the channel is worth subscribing to.
 --- /task ---
 
-Place the new section after your list in `index.html`.
+Paste this section just after the list section and before `</main>` in `index.html`.
 
 <div class="c-project-code">
 
@@ -13,16 +13,18 @@ Place the new section after your list in `index.html`.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 52
-line_highlights: 54-60
+line_number_start: 46
+line_highlights: 48-53
 ---
-      <!-- Add a quote to make the channel feel more convincing -->
+      </section>
+
       <section class="wrap gradient2">
         <div class="wide">
           <blockquote>The videos are short, clear, and full of ideas I can try straight away on my own channel.</blockquote> <!-- Share feedback from a subscriber -->
           <cite>Mia, Pixel Pulse subscriber</cite> <!-- Credit the quote -->
         </div>
       </section>
+    </main>
 --- /code ---
 
 </div>
@@ -30,3 +32,7 @@ line_highlights: 54-60
 --- task ---
 **Test:** A quote should appear underneath the list section with the subscriber's name shown below it.
 --- /task ---
+
+<div class="c-project-output">
+![Screenshot of the landing page with a quote panel below the list](images/step_4_output.png)
+</div>

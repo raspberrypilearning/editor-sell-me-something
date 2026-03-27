@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Challenge your landing page</h2>
+<h2 class="c-project-heading--task">Challenge: make your landing page</h2>
 
 --- task ---
 Add your own extra feature to make the landing page even more persuasive or interactive.
@@ -14,3 +14,7 @@ Try one of these ideas:
 --- task ---
 **Test:** Your new feature should be visible on the page and should fit with the style of the rest of the design.
 --- /task ---
+
+<div class="c-project-output">
+![Example screenshot of the finished landing page before you add your own challenge idea](images/step_10_output.png)
+</div>

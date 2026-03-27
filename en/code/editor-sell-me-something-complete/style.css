@@ -15,6 +15,10 @@
   color: var(--ontertiary);
 }
 
+.page {
+  background: var(--page);
+  color: var(--onpage);
+}
 
 /* Apply everywhere */
 
@@ -40,7 +44,9 @@ body {
 /* add a background image to body */
 
 body {
-  /*background-image: url('name.jpg');*/
+  /*background-image: url('name.jpg');*/ /* Uncomment and change filename to add a background image */
+  /*background-repeat: repeat;*/ /* Make the image repeat */
+  /*background-size: cover;*/ /* Make the image cover the whole container */
 }
 
 /* The main content of the page between the header and footer */
@@ -71,7 +77,7 @@ footer {
 /* Section styles */
 
 section {
-  padding: 1rem;
+  padding: 1rem; /* Keep enough space without forcing overflow */
   margin: 1rem auto;
 }
 
@@ -116,6 +122,7 @@ strong {
 
 ol,
 ul {
+  display: inline-block;
   text-align: left;
   padding-left: 2rem;
 }
@@ -153,6 +160,7 @@ a:visited {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  gap: 0rem 0rem; /* horizontal and vertical gap */
 }
 
 /* For creating fancy boxes */
@@ -168,14 +176,14 @@ a:visited {
 /* Styles for the div tags that are inside a .wrap class */
 
 .wrap > div {
-  width: min(14rem, 100%);
+  width: min(14rem, 100%); /* Keep wrapped blocks inside narrow embeds */
   padding: 0rem;
 }
 
 /* Styles for the img tags that are inside a .wrap class */
 
 .wrap > img {
-  width: min(14rem, 100%);
+  width: min(14rem, 100%); /* Let wrapped images shrink on smaller screens */
   display: block;
   padding: 0rem;
 }
@@ -184,7 +192,7 @@ a:visited {
 
 .wrap > p,
 .wrap > span {
-  width: min(14rem, 100%);
+  width: min(14rem, 100%); /* Let text blocks shrink instead of overflowing */
   display: block;
   padding: 0rem;
 }
@@ -203,11 +211,11 @@ a:visited {
 }
 
 .wrap .narrow {
-  width: min(10rem, 100%);
+  width: min(10rem, 100%); /* Keep narrow blocks responsive */
 }
 
 .wrap .wide {
-  width: min(20rem, 100%);
+  width: min(20rem, 100%); /* Stop the quote block overflowing in embeds */
 }
 
 blockquote {
@@ -253,26 +261,13 @@ cite {
   color: #111111;
 }
 
-.gradientCP {
-  background-image: linear-gradient(
-    to bottom right,
-    #0a0a0a,
-    #1f1f1f,
-    #ff0033,
-    #0a0a0a,
-    #ff3d00,
-    #ffffff
-  );
-  color: #ffffff;
-}
-
 .shadow {
    box-shadow: 5px 5px 3px 0px #888888; /* right and bottom shadow size, blur, spread and colour */
    /*box-shadow: 5px 5px 4px 2px var(--detail);*/
 }
 
 .wrap .card {
-  width: min(15rem, 100%);
+  width: min(15rem, 100%); /* Keep cards responsive in narrow embeds */
   height: 10rem;
   border: 0.1rem solid transparent;
 }
@@ -300,5 +295,41 @@ cite {
 
 .card p {
   padding: 0.5rem;
+}
+
+.gradientCP {
+  background-image: linear-gradient(
+    to bottom right,
+    #0a0a0a,
+    #1f1f1f,
+    #ff0033,
+    #0a0a0a,
+    #ff3d00,
+    #ffffff
+  );
+  color: #ffffff;
+}
+
+/* Printed photo style */
+
+.photo {
+  border: 1px solid #D0D0D0; /* Add a solid border */
+  width: 14rem;
+  height: 15rem;
+  background: #ffffff;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  box-shadow: 8px 8px 10px 4px #888888; /* right and bottom shadow, blur, spread and colour */
+  transform: rotate(3deg);
+}
+
+.photo:hover {
+  transform: rotate(-3deg);
+}
+
+.hugefont:hover {
+  transform: scale(1.2);
 }
 
