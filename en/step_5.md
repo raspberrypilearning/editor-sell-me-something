@@ -1,54 +1,57 @@
-<h2 class="c-project-heading--task">Choose the colours and fonts</h2>
+<h2 class="c-project-heading--task">Add YouTube flip cards</h2>
 
---- task ---
-Update the CSS variables so the page uses a YouTube-inspired red, black, white, and orange colour theme.
---- /task ---
+### Step 1
+Add two flip cards that reveal highlights from your YouTube channel when the visitor hovers over them.
 
-Open `default.css` from the file list next to `index.html`, then change these values.
+Paste this section after the quote and just before `</main>` in `index.html`.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: css
-filename: default.css
+language: html
+filename: index.html
 line_numbers: true
-line_number_start: 1
-line_highlights: 5-14,16-19
+line_number_start: 53
+line_highlights: 55-67,69-81
 ---
+      </section>
 
-/* Set up colour palette and fonts using variables */
+      <section class="wrap">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-face ycenter rounded gradient1 shadow">
+              <h2>Fresh videos every week</h2>
+              <p class="bigfont">▶️</p> <!-- Front of the first card -->
+            </div>
+            <div class="card-face ycenter rounded flipme gradient2 shadow">
+              <p class="bigfont">📅</p>
+              <p>NEW UPLOADS EVERY FRIDAY</p> <!-- Back of the first card -->
+            </div>
+          </div>
+        </div>
 
-:root {
-  --primary: #ffffff; /* Use white for the main content background */
-  --secondary: #ff0033; /* Use a bright red for eye-catching sections */
-  --tertiary: #111111; /* Add a dark neutral for contrast */
-  --page: #0a0a0a; /* Make the page background almost black */
-  --onprimary: #111111; /* Use dark text on light backgrounds */
-  --onsecondary: #ffffff; /* Keep text readable on the red background */
-  --ontertiary: #ffffff; /* Keep text readable on the dark background */
-  --onpage: #ffffff;
-  --detail: #ff3d00; /* Use orange-red for borders and highlights */
-  --detail2: #ffcc00; /* Add a warm yellow accent */
-
-  --body-font: 1rem 'Nunito', sans-serif; /* Set the main body font */
-  --header-font: lighter 3rem 'Russo One', sans-serif; /* Give the heading a bold display font */
-  --title-font: lighter 1.5rem 'Nunito', sans-serif;
-  --quote-font: lighter 1.5rem 'Nunito', sans-serif;
-}
+        <div class="card">
+          <div class="card-content">
+            <div class="card-face ycenter rounded gradient2 shadow">
+              <h2>More than just tutorials</h2>
+              <p class="bigfont">🔔</p> <!-- Front of the second card -->
+            </div>
+            <div class="card-face ycenter rounded flipme gradient1 shadow">
+              <p class="bigfont">🎥</p>
+              <p>SHORTS, LIVESTREAMS, AND CHALLENGES</p> <!-- Back of the second card -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 --- /code ---
 
 </div>
 
---- task ---
-**Test:** Your page should now use the new channel colours and fonts, even though the layout is still simple.
---- /task ---
+### Step 2
+**Test:** Two new cards should appear under the quote, and each one should show a different channel message when you hover over it.
 
 <div class="c-project-output">
-![Screenshot of the landing page using the red, black, white, and orange colour theme](images/step_5_output.png)
-</div>
-
-### Tip
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> Try changing the colours again later to make your own version of the landing page theme.
+![Screenshot of the landing page with two flip cards underneath the quote](images/step_6_output.png)
 </div>

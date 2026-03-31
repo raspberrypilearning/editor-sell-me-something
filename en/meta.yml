@@ -7,8 +7,8 @@ version: 5
 listed: true
 copyedit: true
 last_tested: "2026-03-13"
+landing: true
 steps:
-  - title: Introduction
   - title: Update the header and footer
   - title: Add a selling list
     completion:
@@ -23,5 +23,5 @@ steps:
   - title: Refine the animation
     completion:
       - external
-  - title: Challenge - make your landing page
+  - title: "Challenge: make your landing page"
     challenge: true
