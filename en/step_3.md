@@ -1,10 +1,9 @@
-<h2 class="c-project-heading--task">Add a selling list</h2>
+<h2 class="c-project-heading--task">Add a customer quote</h2>
 
---- task ---
-Replace the placeholder paragraph with a section that explains why the YouTube channel is worth following.
---- /task ---
+### Step 1
+Add a quote section that gives visitors social proof that the channel is worth subscribing to.
 
-Add a wrapped section with a large emoji and an ordered list.
+Paste this section just after the list section and before `</main>` in `index.html`.
 
 <div class="c-project-code">
 
@@ -13,22 +12,15 @@ Add a wrapped section with a large emoji and an ordered list.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 32
-line_highlights: 34-35,37-46
+line_number_start: 46
+line_highlights: 48-53
 ---
-    <!-- The main content for the web page goes between the main tags -->
-    <main>
-      <section class="wrap">
-        <p class="spinme hugefont">🎬</p> <!-- Make the emoji stand out and spin -->
+      </section>
 
-        <div>
-          <p>Why viewers subscribe:</p> <!-- Introduce the list -->
-          <ol>
-            <li><strong>Watch</strong> quick creative tech videos</li> <!-- Show the first benefit -->
-            <li><strong>Learn</strong> editing and design tricks</li>
-            <li><strong>Join</strong> live builds and Q&amp;A sessions</li>
-            <li><strong>Share</strong> your ideas in the comments</li>
-          </ol>
+      <section class="wrap gradient2">
+        <div class="wide">
+          <blockquote>The videos are short, clear, and full of ideas I can try straight away on my own channel.</blockquote> <!-- Share feedback from a subscriber -->
+          <cite>Mia, Pixel Pulse subscriber</cite> <!-- Credit the quote -->
         </div>
       </section>
     </main>
@@ -36,10 +28,9 @@ line_highlights: 34-35,37-46
 
 </div>
 
---- task ---
-**Test:** You should see a large emoji next to a four-point list explaining what viewers get from the channel.
---- /task ---
+### Step 2
+**Test:** A quote should appear underneath the list section with the subscriber's name shown below it.
 
 <div class="c-project-output">
-![Screenshot of the landing page with a film emoji and a list of reasons to subscribe](images/step_3_output.png)
+![Screenshot of the landing page with a quote panel below the list](images/step_4_output.png)
 </div>
