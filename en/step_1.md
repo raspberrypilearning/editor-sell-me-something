@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Update the header and footer</h2>
 
-### Step 1
 Replace the placeholder heading and remove the footer text so your landing page starts with a clear message.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Edit the heading and footer area in `index.html`. You can leave the browser tab title as it is.
 
@@ -39,8 +40,9 @@ line_highlights: 26,28-29,40-41
 
 </div>
 
-### Step 2
-**Test:** The page heading should say `Subscribe to Pixel Pulse`, and the old footer text should be gone.
+## Now run your code
+
+The page heading should say `Subscribe to Pixel Pulse`, and the old footer text should be gone.
 
 <div class="c-project-output">
 ![Screenshot of the landing page with the new heading and an empty footer](images/step_2_output.png)

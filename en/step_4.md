@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Choose the colours and fonts</h2>
 
-### Step 1
 Update the CSS variables so the page uses a YouTube-inspired red, black, white, and orange colour theme.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `default.css` from the file list next to `index.html`, then change these values.
 
@@ -39,8 +40,9 @@ line_highlights: 5-14,16-19
 
 </div>
 
-### Step 2
-**Test:** Your page should now use the new channel colours and fonts, even though the layout is still simple.
+## Now run your code
+
+Your page should now use the new channel colours and fonts, even though the layout is still simple.
 
 <div class="c-project-output">
 ![Screenshot of the landing page using the red, black, white, and orange colour theme](images/step_5_output.png)

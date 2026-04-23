@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add a customer quote</h2>
 
-### Step 1
 Add a quote section that gives visitors social proof that the channel is worth subscribing to.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Paste this section just after the list section and before `</main>` in `index.html`.
 
@@ -28,8 +29,9 @@ line_highlights: 48-53
 
 </div>
 
-### Step 2
-**Test:** A quote should appear underneath the list section with the subscriber's name shown below it.
+## Now run your code
+
+A quote should appear underneath the list section with the subscriber's name shown below it.
 
 <div class="c-project-output">
 ![Screenshot of the landing page with a quote panel below the list](images/step_4_output.png)

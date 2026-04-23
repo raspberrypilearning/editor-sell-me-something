@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Refine the animation</h2>
 
-### Step 1
 Adjust the animation settings so the channel emoji and link keep moving gently while the cards flip smoothly.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `animation.css` and only change the highlighted lines. Leave the other animation classes in place.
 
@@ -147,8 +148,9 @@ line_highlights: 2-3,7,18,31,39,44,49,52,55,70,74,86,90
 
 </div>
 
-### Step 2
-**Test:** The emoji should spin continuously, the `Visit the channel` link should keep bouncing, and the flip cards should still work.
+## Now run your code
+
+The emoji should spin continuously, the `Visit the channel` link should keep bouncing, and the flip cards should still work.
 
 <div class="c-project-output">
 ![Screenshot of the finished landing page with the animated emoji, cards, and link](images/step_9_output.png)

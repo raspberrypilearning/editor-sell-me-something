@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add a selling list</h2>
 
-### Step 1
 Replace the placeholder paragraph with a section that explains why the YouTube channel is worth following.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Add a wrapped section with a large emoji and an ordered list.
 
@@ -35,8 +36,9 @@ line_highlights: 34-35,37-46
 
 </div>
 
-### Step 2
-**Test:** You should see a large emoji next to a four-point list explaining what viewers get from the channel.
+## Now run your code
+
+You should see a large emoji next to a four-point list explaining what viewers get from the channel.
 
 <div class="c-project-output">
 ![Screenshot of the landing page with a film emoji and a list of reasons to subscribe](images/step_3_output.png)

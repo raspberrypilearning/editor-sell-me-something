@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Style the final layout</h2>
 
-### Step 1
 Update the page styles so the background and flip cards match the finished YouTube channel design and still fit neatly inside the project embed.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `style.css`. There is a lot of existing CSS in this file, so only change the highlighted lines in the selectors shown below.
 
@@ -289,8 +290,9 @@ cite {
 
 </div>
 
-### Step 2
-**Test:** The page background should look more like a video channel banner, the layout should fit neatly inside the project embed, and the flip cards should still work.
+## Now run your code
+
+The page background should look more like a video channel banner, the layout should fit neatly inside the project embed, and the flip cards should still work.
 
 <div class="c-project-output">
 ![Screenshot of the landing page with the full layout styling and background gradient applied](images/step_7_output.png)
