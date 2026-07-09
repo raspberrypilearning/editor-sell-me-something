@@ -1,13 +1,14 @@
 ## Challenge: make your landing page
 
-Add your own extra feature to make the landing page even more persuasive or interactive.
-
-Try one of these ideas:
-
-- Add another flip card with a new channel feature.
-- Add a second quote from a subscriber.
-- Change the background gradient to make a different mood.
-- Add an image or emoji that uses one of the starter animation classes.
+> [!CHALLENGE]
+> Add your own extra feature to make the landing page even more persuasive or interactive.
+>
+> Try one of these ideas:
+>
+> - Add another flip card with a new channel feature.
+> - Add a second quote from a subscriber.
+> - Change the background gradient to make a different mood.
+> - Add an image or emoji that uses one of the starter animation classes.
 
 ## Now run your code
 
