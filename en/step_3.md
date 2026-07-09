@@ -2,6 +2,8 @@
 
 Add a quote section that gives visitors social proof that the channel is worth subscribing to.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Paste this section just after the list section and before `</main>` in `index.html`.
 
 ```html filename="index.html" line_numbers="true" line_number_start="46" line_highlights="48-53"

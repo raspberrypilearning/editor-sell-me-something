@@ -2,6 +2,8 @@
 
 Adjust the animation settings so the channel emoji and link keep moving gently while the cards flip smoothly.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Open `animation.css` and only change the highlighted lines. Leave the other animation classes in place.
 
 ```css filename="animation.css" line_numbers="true" line_number_start="1" line_highlights="2-3,7,18,31,39,44,49,52,55,70,74,86,90"

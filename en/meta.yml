@@ -4,7 +4,7 @@ description: Make a webpage for a product or idea.
 meta_title: Learn web development | Build a landing page | Sell
 meta_description: Learn web development for beginners with the Raspberry Pi Foundation. Use HTML and CSS to build a landing page to sell a product or idea.
 version: 5
-listed: true
+listed: false
 copyedit: true
 last_tested: "2026-03-13"
 landing: true

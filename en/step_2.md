@@ -2,6 +2,8 @@
 
 Replace the placeholder paragraph with a section that explains why the YouTube channel is worth following.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Add a wrapped section with a large emoji and an ordered list.
 
 ```html filename="index.html" line_numbers="true" line_number_start="32" line_highlights="34-35,37-46"

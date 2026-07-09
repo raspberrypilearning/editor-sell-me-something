@@ -2,6 +2,8 @@
 
 Update the CSS variables so the page uses a YouTube-inspired red, black, white, and orange colour theme.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Open `default.css` from the file list next to `index.html`, then change these values.
 
 ```css filename="default.css" line_numbers="true" line_number_start="1" line_highlights="5-14,16-19"

@@ -2,6 +2,8 @@
 
 Replace the placeholder heading and remove the footer text so your landing page starts with a clear message.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Edit the heading and footer area in `index.html`. You can leave the browser tab title as it is.
 
 ```html filename="index.html" line_numbers="true" line_number_start="24" line_highlights="26,28-29,40-41"

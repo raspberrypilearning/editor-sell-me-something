@@ -2,6 +2,8 @@
 
 Add two flip cards that reveal highlights from your YouTube channel when the visitor hovers over them.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Paste this section after the quote and just before `</main>` in `index.html`.
 
 ```html filename="index.html" line_numbers="true" line_number_start="53" line_highlights="55-67,69-81"
