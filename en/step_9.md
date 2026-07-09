@@ -2,8 +2,6 @@
 
 Add your own extra feature to make the landing page even more persuasive or interactive.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Try one of these ideas:
 
 - Add another flip card with a new channel feature.

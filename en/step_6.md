@@ -2,8 +2,6 @@
 
 Update the page styles so the background and flip cards match the finished YouTube channel design and still fit neatly inside the project embed.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Open `style.css`. There is a lot of existing CSS in this file, so only change the highlighted lines in the selectors shown below.
 
 ```css filename="style.css" line_numbers="true" line_number_start="44" line_highlights="57-58,80,179-180,186,188,195,197,208,214,218,223,225,230-233,249-250,252,257-259,261,270,300-310"
