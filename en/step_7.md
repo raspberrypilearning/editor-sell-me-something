@@ -2,8 +2,6 @@
 
 Add a final link that gives visitors a clear way to visit the YouTube channel.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Paste this section just before `</main>` in `index.html`.
 
 ```html filename="index.html" line_numbers="true" line_number_start="81" line_highlights="83-85"
