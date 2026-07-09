@@ -1,20 +1,10 @@
-<h2 class="c-project-heading--task">Add YouTube flip cards</h2>
+## Add YouTube flip cards
 
-### Step 1
 Add two flip cards that reveal highlights from your YouTube channel when the visitor hovers over them.
 
 Paste this section after the quote and just before `</main>` in `index.html`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 53
-line_highlights: 55-67,69-81
----
+```html filename="index.html" line_numbers="true" line_number_start="53" line_highlights="55-67,69-81"
       </section>
 
       <section class="wrap">
@@ -45,13 +35,10 @@ line_highlights: 55-67,69-81
         </div>
       </section>
     </main>
---- /code ---
+```
 
-</div>
+## Now run your code
 
-### Step 2
-**Test:** Two new cards should appear under the quote, and each one should show a different channel message when you hover over it.
+Two new cards should appear under the quote, and each one should show a different channel message when you hover over it.
 
-<div class="c-project-output">
 ![Screenshot of the landing page with two flip cards underneath the quote](images/step_6_output.png)
-</div>

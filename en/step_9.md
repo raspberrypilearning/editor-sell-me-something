@@ -1,6 +1,5 @@
-<h2 class="c-project-heading--task">Challenge: make your landing page</h2>
+## Challenge: make your landing page
 
-### Step 1
 Add your own extra feature to make the landing page even more persuasive or interactive.
 
 Try one of these ideas:
@@ -10,9 +9,8 @@ Try one of these ideas:
 - Change the background gradient to make a different mood.
 - Add an image or emoji that uses one of the starter animation classes.
 
-### Step 2
-**Test:** Your new feature should be visible on the page and should fit with the style of the rest of the design.
+## Now run your code
 
-<div class="c-project-output">
+Your new feature should be visible on the page and should fit with the style of the rest of the design.
+
 ![Example screenshot of the finished landing page before you add your own challenge idea](images/step_10_output.png)
-</div>
